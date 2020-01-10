@@ -1,0 +1,129 @@
+.top-hero
+    height: 600px
+    display: flex
+    .hero
+        width: 90%
+.main
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+.hero-img
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -1
+    object-fit: cover
+.text-hero
+    width: 55%
+.title
+    color: #ffffff
+    font-size: 24px
+    font-weight: bold
+.header
+    height: 60px
+    border-bottom: 2px solid #fff
+    margin-bottom: 40px
+
+.subtitle
+    margin-bottom: 50px
+    color: #ffffff
+.btn    
+    color: #fff
+    border: 2px solid $accent
+    padding: 14px 27px
+    border-radius: 6px 
+    font-size: 13px    
+.primary
+    background-color: $accent
+.news
+    padding: 100px 100px
+    height: 100%
+.block-slide
+    overflow: hidden
+    position: relative   
+    height: 100%
+    display: inline-block 
+.slide-line
+    height: 100%       
+.slide-item-2,.slide-item-3    
+    top: 0
+    left: 0
+    display: none
+    transform: translateX(0%)    
+.slide-item-3
+    transform: translateX(0%)
+.slide-item    
+    transition-duration: 1s        
+    
+    
+
+
+.bg-white
+    background-color: #fff
+.title-black
+    font-size: 24px
+    font-weight: bold
+    color: $black
+    display: block
+    border-bottom: 2px solid $semigray
+    height: 60px
+    position: relative
+.category
+    font-weight: bold
+    font-size: 16px
+    color: $accent
+    margin-top: 30px
+    margin-bottom: 5px
+.article-title
+    font-weight: bold
+    font-size: 16px
+    color: $black
+    margin-bottom: 5px
+.article-text
+    font-family: Acumin
+    font-weight: normal
+    font-size: 16px
+    color: $gray
+    height: 50px
+    margin-bottom: 1px
+    line-height: 1.4
+.publish-time
+    margin-top: -5px
+    font-size: 13px
+    font-style: italic
+    line-height: 1.6
+    display: flex
+    &::before
+        content: ''
+        background-image: url(/img/icons/time1.svg)
+        width: 16px
+        height: 16px
+        margin-top: 2px
+        margin-right: 5px
+.arrow-right
+    position: absolute
+    top: -10px
+    right: 0
+    width: 20px
+    height: 40px
+    cursor: pointer
+    opacity: 0.3 
+    &:hover
+        opacity: 1
+    &:focus
+        outline: none
+.arrow-left
+    position: absolute
+    top: -10px
+    right: 40px
+    width: 20px
+    height: 40px
+    cursor: pointer
+    opacity: 0.3 
+    &:hover
+        opacity: 1
+    &:focus
+        outline: none
+

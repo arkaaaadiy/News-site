@@ -1,0 +1,61 @@
+.nav
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+.logo
+    color: $accent
+    font-weight: bold
+    font-size: 12px
+    margin-left: 1%
+.nav-bar
+    display: flex
+    align-items: center    
+    ul
+        list-style: none
+        margin: 0
+        padding-left: 0
+        display: flex
+        flex-direction: row
+        li            
+            position: relative
+            transition-duration: 0.5s
+            &:hover
+                cursor: pointer
+            ul
+                visibility: hidden
+                opacity: 0
+                min-width: 5rem
+                position: absolute
+                transition: all 0.5s ease
+                margin-top: 0
+                width: 
+                left: -20px
+                display: none
+    ul,li:hover 
+        ul, ul, li, ul:hover     
+            visibility: visible
+            opacity: 1
+            display: block            
+            z-index: 1
+            background-color: $dirtwhite
+            li
+                width: 160px
+                padding: 10px 20px
+                margin-right: 20px 
+                &:first-child
+                    padding-top: 20px 
+                &:last-child
+                    padding-bottom: 20px      
+                
+    .nav-link
+        margin-right: 1.5em        
+        line-height: 1.9
+        font-size: 14px         
+.avatar
+    display: block
+    width: 30px
+    height: 30px
+    background-color: #000
+    border-radius: 50%
+    margin: 0 20px

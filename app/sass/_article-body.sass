@@ -1,0 +1,80 @@
+.article-body
+    padding: 50px 18%
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1600px)
+        padding: 50px 14%
+    @media screen and (max-width: 1440px)
+        padding: 50px 10%
+    @media screen and (max-width: 1200px)
+        padding: 50px 7%
+    @media screen and (max-width: 1000px)
+        padding: 50px 10%
+        flex-direction: column
+        padding-bottom: 0
+        &__subtext
+            max-width: 47%
+    @media screen and (max-width: 500px)
+        padding: 40px 24px
+        &__subtext
+            max-width: 100%
+    &__line
+        border: 1px solid $semigray
+        width: 1px
+        min-height: 100%
+        margin-right: 35px
+        @media screen and (max-width: 1000px)
+            min-width: 100%
+            height: 1px
+            margin: 35px 0
+    &__left-column
+        max-width: 28%
+        margin-right: 35px
+        position: relative
+        max-height: 100%        
+        h2
+            line-height: 1.3
+            font-weight: 700
+            font-family: Acumin
+        p
+            font-size: 14px 
+        &:after            
+            height: 100%
+            border: 1px solid $semigray
+            width: 1px
+            position: absolute
+            top: 0
+            right: -35px
+        .line
+            border: 1px dashed $semigray
+            margin: 40px 0px
+        @media screen and (max-width: 1000px)
+            max-width: 100%
+            margin-right: 0
+            display: flex
+            justify-content: space-between
+        @media screen and (max-width: 500px)
+            flex-direction: column  
+    &__right-column
+        max-width: 72%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .video
+            width: 100%
+        @media screen and (max-width: 1000px)
+            max-width: 100%            
+    &__author-article  
+        margin-bottom: 20px      
+        p
+            color: #202124
+            font-size: 14px 
+        
+    &__author-title
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        h4
+            padding: 0
+            margin: 0
+            margin-left: 15px

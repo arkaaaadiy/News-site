@@ -1,0 +1,71 @@
+.wrapper-menu-mob
+    position: absolute
+    width: 30vw
+    height: 100vh
+    top: 0
+    right: 0
+    display: none
+    z-index: 100
+.menu-mob
+    position: absolute 
+    box-shadow: 0 0 50px rgba(0,0,0,0.5)  
+    left: 0
+    top: 0   
+    z-index: 10
+    height: 100vh    
+    width: 287px
+    background-color: $dirtwhite
+    display: flex
+    flex-direction: column
+    transform: translateX(-200%)
+    .menu-mob__inner
+        padding: 40px
+        flex: 1 0 auto;  
+    .logo
+        display: block
+        font-size: 13px
+    .menu-item
+        padding-left: 10px
+        margin-top: 60px
+        list-style-type: none 
+             
+        .menu-link
+            margin-bottom: 35px
+            
+            .home                
+                background-image: url(/img/icons/home.svg)
+                background-repeat: no-repeat
+                background-position: 0 0
+                padding-left: 50px
+            .discovery
+                background-image: url(/img/icons/discovery.svg)
+                background-repeat: no-repeat
+                background-position: 0 0
+                padding-left: 50px
+            .photos
+                background-image: url(/img/icons/photos.svg)
+                background-repeat: no-repeat
+                background-position: 0 0
+                padding-left: 50px
+            .contact
+                background-image: url(/img/icons/mail.svg)
+                background-repeat: no-repeat
+                background-position: 0 0
+                padding-left: 50px
+            .profile
+                background-image: url(/img/ava.png)
+                background-repeat: no-repeat
+                background-position: 0 0                
+                padding-left: 50px
+                background-size: 16px 16px
+    .memu-footer
+        flex: 0 0 auto;
+        background: rgba(0,0,0,0.23)
+        padding: 40px        
+        .link-foot
+            color: rgba(255,255,255,0.5)
+            margin-bottom: 20px
+               
+    .media
+        a
+            color: rgba(255,255,255,0.5)

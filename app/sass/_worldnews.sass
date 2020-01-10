@@ -1,0 +1,75 @@
+.world-news__headling
+    .breadcrumbs
+        display: flex
+        margin-bottom: 40px
+        .breadcrumb
+            list-style: none
+            overflow: hidden   
+            display: flex
+            padding-left: 0
+            li::before
+                content: '/'
+                margin: 0 20px
+                color: $black
+                font-size: 14px
+            li:first-child::before
+                content: ''
+            a    
+                color: $black 
+                text-transform: uppercase
+                font-size: 14px                 
+                &:hover
+                    color: $gray 
+            .active       
+                    color: $gray 
+.world-news__main
+    display: flex
+    .leftcolm
+        height: 500px  
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center 
+        h1,p
+            color: #fff 
+        h1
+            position: relative
+        h1::after
+            content: ''
+            width: 40px
+            position: absolute
+            left: 41%
+            bottom: 0
+            border: 1px solid $accent
+            border-radius: 4px
+        p
+            max-width: 360px
+            text-align: center
+            font-weight: bold
+        .bg-world-news        
+            position: absolute
+            z-index: -1
+            object-fit: cover    
+    .rightcolm
+        background-color: #fff
+        width: 50%
+        padding: 127px 110px
+.search
+    display: flex
+    flex-direction: column
+    p
+        font-size: 13px
+        font-weight: bold
+        font-family: Acumin
+        color: $black
+        padding: 0
+        margin: 0
+    .search__select
+        margin-bottom: 40px
+    .search__input
+        margin-bottom: 40px
+    .search_lbl-select
+    .search__btn
+        max-width: 134px
+        

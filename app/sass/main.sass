@@ -1,0 +1,52 @@
+@import vars
+@import fonts
+@import libs
+@import hero
+@import navbar
+@import trending
+@import happening
+@import footer
+@import animate
+@import media
+@import article
+@import article-body
+@import menu-mob
+@import worldnews
+
+
+ 
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	box-sizing: border-box
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Helvetica', sans-serif
+	overflow-x: hidden
+	color: $gray
+	background-color: $dirtwhite
+a
+	text-decoration: none
+	color: rgba(52, 54, 56, 0.6)
+	font-weight: bold
+	&:hover
+		text-decoration: none
+		color: #343638
+		opacity: 1
+h1,h2,h3,h4,h5,h6
+	color: $black
+// Custom Sass / Remove before use
+section
+	margin-top: 40px	
+.container
+	max-width: 1160px
+	margin: 0 auto	
+
