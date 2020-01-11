@@ -59,17 +59,60 @@
     display: flex
     flex-direction: column
     p
-        font-size: 13px
+        font-size: 14px
         font-weight: bold
         font-family: Acumin
         color: $black
         padding: 0
         margin: 0
+        margin-bottom: 2px
     .search__select
         margin-bottom: 40px
+        max-height: 40px
+        padding: 8px 15px 
+        font-weight: 400
+        font-size: 13px
+        color: $gray
+        border: 2px solid $semigray
+        border-radius: 6px
+        outline: none
+        background-image: url(/img/_src/dropdown.jpg)
+        background-repeat: no-repeat
+        background-position: right .8em top 50%, 0 0
+        appearance: none
+        option
+            color: $gray
+            padding: 6px 28px 6px 0;
     .search__input
         margin-bottom: 40px
+        padding: 0 15px
+        min-height: 40px
+        font-weight: 400
+        font-size: 13px
+        color: $gray
+        border: 2px solid $semigray
+        border-radius: 6px
     .search_lbl-select
     .search__btn
-        max-width: 134px
-        
+        max-width: 140px
+        background-color: $accent
+        color: #fff
+        border: none
+        font-size: 12px
+        font-weight: bold
+        font-family: Arial, Helvetica, sans-serif
+        padding: 8px 1px
+        border-radius: 6px
+.last-news
+    border-top: 2px solid $semigray
+    border-bottom: 2px solid $semigray
+    padding: 40px 0
+    display: flex
+    max-height: 252px
+    justify-content: space-between
+    .last-news__col
+        max-width: 360px
+        padding: 
+        font-size: 14px
+        h2
+            margin-top: 10px
