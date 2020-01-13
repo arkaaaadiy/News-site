@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 	var i = 0;	
-	
+		if (left){
 		left.onclick = () => {
 			if (i > 0) {
 			slide[i].style.transform = 'translete(-100%)'			
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			slide[i].classList.add('active')			
 			}
 		}
+		}
+		if (right) {
 		right.onclick = () => {
 			if (i<2) {
 				slide[i].style.display = "none"
@@ -53,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 			
 		}
-
+		}
 	const menu = document.querySelector('.menu');
 	const menuMob = document.querySelector('.menu-mob');
 	const wrapperMenu = document.querySelector('.wrapper-menu-mob');

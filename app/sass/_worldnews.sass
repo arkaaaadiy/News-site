@@ -1,7 +1,30 @@
+.containerwn
+    @media (max-width: 1350px)
+        padding: 0 80px
+    @media (max-width: 550px)
+        padding: 0
+.containerwn_body
+    @media (max-width: 550px)
+        padding: 0 24px
+.world-news
+    @media (max-width: 550px)
+        margin-top: 0  
+.world-news-nav
+    @media (max-width: 444px)
+        display: none
 .world-news__headling
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+    @media (max-width: 550px)
+        margin-bottom: 0
+    @media (max-width: 444px)
+        height: 45px
     .breadcrumbs
-        display: flex
-        margin-bottom: 40px
+        display: flex        
+        @media (max-width: 550px)
+            display: none
         .breadcrumb
             list-style: none
             overflow: hidden   
@@ -22,15 +45,43 @@
                     color: $gray 
             .active       
                     color: $gray 
+    .arrow-back
+        display: none
+        justify-content: center
+        align-items: center
+        margin-left: 16px
+        @media (max-width: 444px)
+            display: flex
+    .filter
+        height: 40px
+        width: 40px
+        border: 2px solid $semigray
+        border-radius: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        @media (max-width: 550px)
+            display: none
+        @media (max-width: 444px)
+            display: flex
+            margin-right: 3px
+            border: none            
 .world-news__main
     display: flex
+    @media (max-width: 1000px)
+        flex-direction: column
     .leftcolm
         height: 500px  
         width: 50%
         display: flex
         flex-direction: column
         justify-content: center
-        align-items: center 
+        align-items: center
+        position: relative 
+        overflow: hidden
+        border-radius: 5px 0px 0px 5px
+        @media (max-width: 1000px)
+            width: 100%
         h1,p
             color: #fff 
         h1
@@ -50,11 +101,21 @@
         .bg-world-news        
             position: absolute
             z-index: -1
-            object-fit: cover    
+            object-fit: cover 
+            width: 100%
+            height: 100%   
     .rightcolm
         background-color: #fff
         width: 50%
         padding: 127px 110px
+        overflow: hidden
+        border-radius: 0px 5px 5px 0px
+        @media (max-width: 1350px)
+            padding: 127px 60px
+        @media (max-width: 1000px)
+            width: 100%
+        @media (max-width: 550px)
+            padding: 36px 24px
 .search
     display: flex
     flex-direction: column
@@ -80,6 +141,8 @@
         background-repeat: no-repeat
         background-position: right .8em top 50%, 0 0
         appearance: none
+        &:focus
+            border-color: #72ACFF
         option
             color: $gray
             padding: 6px 28px 6px 0;
@@ -92,6 +155,8 @@
         color: $gray
         border: 2px solid $semigray
         border-radius: 6px
+        &:focus
+            border-color: #72ACFF
     .search_lbl-select
     .search__btn
         max-width: 140px
@@ -107,12 +172,67 @@
     border-top: 2px solid $semigray
     border-bottom: 2px solid $semigray
     padding: 40px 0
-    display: flex
-    max-height: 252px
+    display: flex   
+    max-height: 330px
     justify-content: space-between
+    @media (max-width: 1200px)        
+        max-height: 465px
+    @media (max-width: 1000px)
+        flex-wrap: wrap 
+    @media (max-width: 550px)
+        max-height: 100%
     .last-news__col
         max-width: 360px
         padding: 
         font-size: 14px
+        margin-right: 40px
+        @media (max-width: 1000px)
+            max-width: 46%
+            &:first-child
+                max-width: 100%
+                width: 100%
+                margin-bottom: 20px
+                h2
+                    max-width: 360px
+        @media (max-width: 550px)
+            max-width: 100%
+            margin-right: 0
+        &:last-child        
+            margin-right: 0
+        
         h2
             margin-top: 10px
+.body-news
+    border-bottom: 2px solid $semigray
+    .body-news__text
+        display: flex
+        margin-top: 40px
+        @media (max-width: 950px)
+            flex-direction: column
+        .body-news_rightcolm
+            margin-left: 40px
+            width: 100%
+            color: $black
+            @media (max-width: 950px)
+                margin-left: 0
+    .body-news__photo
+        width: 100%
+        border-radius: 5px
+.pagination    
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    .numpag
+        font-size: 14px
+        padding-bottom: 10px
+        margin-right: 24px
+        color: $gray
+        font-weight: 400
+    .numpag-active
+        color: $black
+        border-bottom: 2px solid $accent
+        font-weight: bold
+    .dots-more
+        max-height: 22px
+        display: flex
+        align-items: center
